@@ -1,0 +1,79 @@
+(8L)	(5L)	(3L)  --> jar
+
+8	 0	 0
+3 	5	 0
+3	 2	 3
+6	 2	 0
+6	 0	 2
+1 	5	 2
+1	 4	 3
+4	 4	 0
+
+# Word Ladder problem:
+
+function findShortestPath(beginWord, endWord, wordList):
+
+    convert wordList into a set called wordSet
+    if endWord is not in wordSet:
+        return 0   // No valid path
+
+    create a queue Q
+    add (beginWord, 1) to Q  // word + step count
+
+    while Q is not empty:
+        currentWord, steps = Q.dequeue()
+
+        for each position i in currentWord:
+            for each letter a to z:
+                newWord = change letter at position i to that letter
+
+                if newWord is endWord:
+                    return steps + 1
+
+                if newWord is in wordSet:
+                    add (newWord, steps + 1) to Q
+                    remove newWord from wordSet (mark as visited)
+
+    return 0  // if no path is found
+
+
+
+CLUELY - startup  ( you can use it for clearing interviews )
+
+# Feature PRD: Real-time Booking & Scheduling System
+
+>> write a detailed Product Requirement Document(PRD) for the following feature.
+
+
+>> The feature is a real-time booking and scheduling system that allows users to book appointments instantly and prevents double-bookings.
+
+
+>> Include the following sections:
+
+1. Feature
+2. Introduction
+3. Problem Statement
+4. Goals & Success Metrics
+5. User Stories
+6. Detailed Functional Requirements
+7. Technical & Non-functional Requirements
+8. Out of Scope
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
