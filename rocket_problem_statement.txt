@@ -1,0 +1,20 @@
+// spacex
+Simplified Rocket TDD Challenge
+welcome, engineers! your task is to build a rocket simulator using TDD, each stage introduces new requirements. write test first, then write the code to make them pass.
+stage 1: basic rocket setup
+objective: create a basic rocket and get it ready for launch;
+requirements: a rocket has a model (e.g., "explorer-1") and a base_mass (in kg). 2500 kg
+fueling: a rocket has a fuel_level ( 0 - 100). it must be at 100 to launch.(is in %)
+system check: create a function to verify_readiness(). it should return true  only if the rocket's fuel_level is 100.
+
+stage 2: adding engineers
+objective: equip the rocket with an engine that determines it launch capability
+requirements:
+engine types: a rocket must have an engine. engines add to the rocket's mass and provide lifting power.
+alpha engine: adds 5000 kg mass. provides 5000 kg of lift power.
+beta engine: adds 10000 kg mass. provides 150000 kg of lift power.
+launch mass: a rocket noew has a launch_mass, which is its base_mass plus its engine's mass.
+launch sequence: create a function to start_liftoff().
+it must first confirm the rocket is ready.
+it must then check if the rocket is light enough for the engine to lift.
+if all checks pass, it should initiate the launch sequence and update the rocket's status. otherwise, it should indicate a failure.

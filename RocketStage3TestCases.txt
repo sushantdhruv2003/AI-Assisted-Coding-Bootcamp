@@ -1,0 +1,8 @@
+// Test cases for Rocket Problem Stage 3
+// Please update with specific requirements for stage 3 if available.
+
+// 1. Test that the rocket behaves as expected according to the new requirements introduced in stage 3.
+// 2. Test any new methods or properties added in stage 3.
+// 3. Test edge cases and invalid inputs for the new functionality.
+
+// Add more detailed test cases once stage 3 requirements are provided.
